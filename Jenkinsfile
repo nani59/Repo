@@ -1,39 +1,35 @@
 pipeline {
 	agent any
-
-	tools {
-	    
-	maven"MAVEN"
-	
-	}
 	
 	stages {
 	    
-	 stage ('compile'){
+	 stage ('Bulid'){
 	 
 	 steps {
 	     
-	  sh "mvn clean compile"
+	  echo 'Bulid App'
 	  
 	 }
 	 }
 	 
 	  stage ('Test'){
+	 
+	 steps {
+	     
+	  echo 'Test App'
 	  
-	  steps {
-	  
-	   sh "mvn clean Test"
-	  }
+	 }
 	      
 	  }
 	  
 	  stage ('Depoly'){
 	 
 	 steps {
-	   sh "mvn clean Depoly"
+	     
+	  echo 'Depoly App'
+	  
 	 }
 	    }
 	  
 	   }
-	 
-	}
+}
