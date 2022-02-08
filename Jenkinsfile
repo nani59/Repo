@@ -27,6 +27,7 @@ pipeline {
 	 steps {
 	     
 	  echo 'Depoly App'
+          echo 'Print '
 	  
 	 }
 	    }
